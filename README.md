@@ -308,10 +308,10 @@ This distinction is important in SOC analysis: **absence of observed evidence wi
 | Technique | ID | Relevance |
 |---|---|---|
 | Network Service Scanning | **T1046** | Nmap reconnaissance identified services exposed by the target. |
-| Exploitation for Client Execution / Service Exploitation | **T1190** | The vulnerable vsFTPd service was exploited in the controlled lab environment. |
+| Controlled service exploitation | — | The vsFTPd 2.3.4 service was exploited in the isolated lab. No specific ATT&CK exploitation technique is assigned here because the evidence does not establish the public-facing application context required for T1190 or the lateral-movement context associated with T1210. |
 | Command and Scripting Interpreter | **T1059** | A command shell was established following successful exploitation. |
 
-> **Note:** ATT&CK mappings are used here as an analytical framework for the lab exercise. The investigation evidence directly demonstrates network scanning, exploitation, and shell access; additional post-exploitation techniques were not observed in the available telemetry.
+> **Note:** ATT&CK mappings are used here as an analytical framework for the lab exercise. T1046 maps the reconnaissance activity, and T1059 describes the command-shell activity. The service exploitation is documented as a confirmed lab action but is not assigned T1190 or T1210 because the available evidence does not establish the public-facing application context for T1190 or the lateral-movement context associated with T1210. Additional post-exploitation techniques were not observed in the available telemetry.
 
 ---
 
